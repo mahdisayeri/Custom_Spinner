@@ -1,26 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
-    android:weightSum="4"
-    android:gravity="center_vertical"
-    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
-    <ImageView
-        android:src="@drawable/australia"
-        android:layout_weight="1"
-        android:id="@+id/spinner_imageView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:layout_margin="5dp"
-        android:text="Australia"
-        android:layout_weight="1"
-        android:id="@+id/spinner_textView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:scaleType="fitCenter"
+            android:id="@+id/spinner_imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/australia" />
+        <TextView
+            android:text="Country Name"
+            android:id="@+id/spinner_textView"
+            android:layout_width="100dp"
+            android:maxLines="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp" />
 
 
 
-</LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
