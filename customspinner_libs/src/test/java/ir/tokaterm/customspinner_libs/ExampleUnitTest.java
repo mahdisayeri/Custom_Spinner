@@ -1,4 +1,4 @@
-package ir.tokaterm.customspinner;
+package ir.tokaterm.customspinner_libs;
 
 import org.junit.Test;
 

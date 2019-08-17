@@ -1,4 +1,4 @@
-package ir.tokaterm.customspinner;
+package ir.tokaterm.customspinner_libs;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("ir.tokaterm.customspinner", appContext.getPackageName());
+        assertEquals("ir.tokaterm.customspinner_libs.test", appContext.getPackageName());
     }
 }

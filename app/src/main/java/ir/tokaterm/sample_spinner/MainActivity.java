@@ -1,4 +1,4 @@
-package ir.tokaterm.customspinner;
+package ir.tokaterm.sample_spinner;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

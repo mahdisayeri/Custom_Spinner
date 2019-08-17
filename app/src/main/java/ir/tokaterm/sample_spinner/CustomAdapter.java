@@ -1,4 +1,4 @@
-package ir.tokaterm.customspinner;
+package ir.tokaterm.sample_spinner;
 
 import android.content.Context;
 import android.view.LayoutInflater;
