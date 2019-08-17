@@ -10,20 +10,20 @@ import android.widget.TextView;
 
 public class CustomAdapter extends BaseAdapter {
     Context context;
-    int[] flag;
-    String[] name;
+    int[] imgRes;
+    String[] textName;
     LayoutInflater layoutInflater;
 
-    public CustomAdapter(Context context, int[] flag, String[] name) {
+    public CustomAdapter(Context context, int[] imgRes, String[] textName) {
         this.context = context;
-        this.flag = flag;
-        this.name = name;
+        this.imgRes = imgRes;
+        this.textName = textName;
         layoutInflater = layoutInflater.from(context) ;
     }
 
     @Override
     public int getCount() {
-        return name.length;
+        return textName.length;
     }
 
     @Override
@@ -43,8 +43,8 @@ public class CustomAdapter extends BaseAdapter {
         ImageView img=convertView.findViewById(R.id.spinner_imageView);
         TextView txt=convertView.findViewById(R.id.spinner_textView);
 
-        img.setImageResource(flag[position]);
-        txt.setText(name[position]);
+        img.setImageResource(imgRes[position]);
+        txt.setText(textName[position]);
 
         return convertView;
     }

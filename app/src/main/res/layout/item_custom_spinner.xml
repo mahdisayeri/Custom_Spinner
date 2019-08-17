@@ -18,12 +18,13 @@
             android:scaleType="fitCenter"
             android:id="@+id/spinner_imageView"
             android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/australia" />
+            android:layout_height="60dp"
+            android:src="@drawable/spain" />
         <TextView
             android:text="Country Name"
             android:id="@+id/spinner_textView"
             android:layout_width="100dp"
+            android:textSize="20sp"
             android:maxLines="1"
             android:layout_height="wrap_content"
             android:paddingLeft="5dp" />
