@@ -1,4 +1,4 @@
-package ir.tokaterm.sample_spinner;
+package ir.tokaterm.customspinner_libs;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -39,7 +39,7 @@ public class CustomAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        convertView=layoutInflater.inflate(R.layout.item_custom_spinner,null);
+        convertView=layoutInflater.inflate(R.layout.item_spinner,null);
         ImageView img=convertView.findViewById(R.id.spinner_imageView);
         TextView txt=convertView.findViewById(R.id.spinner_textView);
 

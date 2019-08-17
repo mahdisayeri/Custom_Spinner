@@ -7,6 +7,8 @@ import android.widget.AdapterView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import ir.tokaterm.customspinner_libs.CustomAdapter;
+
 public class MainActivity extends AppCompatActivity {
 
     int[] flags={R.drawable.finland,R.drawable.hungary,R.drawable.indonesia,R.drawable.israel,R.drawable.italy,R.drawable.spain};
