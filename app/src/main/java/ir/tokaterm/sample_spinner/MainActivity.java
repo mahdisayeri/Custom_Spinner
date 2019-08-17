@@ -11,8 +11,8 @@ import ir.tokaterm.customspinner_libs.CustomAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
-    int[] flags={R.drawable.finland,R.drawable.hungary,R.drawable.indonesia,R.drawable.israel,R.drawable.italy,R.drawable.spain};
-    String[] name={"finland","hungary","indonesia","israel","italy","spain"};
+    int[] imageRes={R.drawable.finland,R.drawable.hungary,R.drawable.indonesia,R.drawable.israel,R.drawable.italy,R.drawable.spain};
+    String[] imageName={"finland","hungary","indonesia","israel","italy","spain"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,16 +21,15 @@ public class MainActivity extends AppCompatActivity {
 
         Spinner spinner=findViewById(R.id.main_spinner);
 
-        CustomAdapter customAdapter=new CustomAdapter(getApplicationContext(),flags,name);
+        CustomAdapter customAdapter=new CustomAdapter(getApplicationContext(),imageRes,imageName);
         spinner.setAdapter(customAdapter);
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this, "You Select Position: "+position+" "+name[position], Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(MainActivity.this, "You Select Position: "+position+" "+imageName[position], Toast.LENGTH_SHORT).show();
 
             }
-
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 
